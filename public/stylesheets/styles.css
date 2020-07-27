@@ -1,0 +1,197 @@
+/* CSS Comment */
+
+/* GENERAL FORMATTING */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: url("../images/86373.jpg");
+    background-size: cover;
+    color: #2c302d;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 992px;
+}
+
+/* HEADER */
+.header{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 3rem;
+    display: none;
+    text-shadow: 2px 2px 2px #918891;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* NAVBAR */
+.navname {
+    color: #dddddd;
+    font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2c302d;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  border-radius: 0.3rem;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #bfbfbf;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover {
+  background-color: #2c302d;
+  color: #e6e6e6;
+  text-decoration: underline #e6e6e6;
+
+}
+
+/* TITLES */
+.headings{
+  margin: 0.5rem 0.2rem;
+}
+
+/* LINKS */
+div a:link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #2c302d;
+  background-color: #f3f2f3;
+}
+
+div a:visited {
+  text-decoration: none;
+  font-weight: 700;
+  color: #2c302d;
+    background-color: #f3f2f3;
+}
+
+div a:hover {
+  color: #f3f2f3;
+  font-weight: 700;
+  background-color: #2c302d;
+}
+
+
+/* FLEXBOX SECTIONS */
+/* Container */
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+/*  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;*/
+}
+
+/* All Columns */
+.column {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(243,242,243, 0.7);
+  border: 2px solid #2c302d;
+  border-radius: 0.3rem;
+}
+
+/* Middle column */
+.column.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  margin: 0 10px 0 10px;  
+}
+/* Left and right column */
+.column.side {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+/* CONTACT */
+
+#contact {
+    margin: 0 auto;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(243,242,243, 0.5);
+    border: 2px solid #2c302d;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+a i {
+    font-size: 1.5rem;
+}
+
+/* FOOTER */
+.footer{
+    text-align: center;
+    font-weight: 550;
+}
+
+/* BREAKPOINTS, Mobile-First */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .header {
+    display: block;
+  }
+
+  .navname{
+    display: none;
+  }
+
+.flex-container{
+/*  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;*/
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.column.middle {
+    margin: 10px 0 10px 0;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
